@@ -45,7 +45,7 @@ Welcome to the **Zomboid Video Game Consoles Mod**! Relive the retro gaming days
 
 ### Manual Installation from GitHub
 1. Download the repository as a ZIP file from the GitHub page.
-   - [Download ZIP](https://github.com/unconid/VGC_mod)
+   - [Download ZIP](https://github.com/unconid/VGC_mod/archive/refs/heads/main.zip)
 2. Extract the ZIP file to your `mods` folder.
    - Default location:  
      `%USERPROFILE%\Zomboid\mods`
