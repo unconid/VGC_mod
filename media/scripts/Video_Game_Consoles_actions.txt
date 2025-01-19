@@ -1,0 +1,286 @@
+module Video_Game_Consoles
+{
+
+/***Play_GameBoy***/
+
+    timedAction PlayZelda
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakingElectrical,
+	sound		= zelda_game_gb,
+	prop2 		= Video_Game_Consoles.GameBoy_A,
+    }
+	
+	timedAction PlayKirby
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = kirby_game_gb,
+	prop2           = Video_Game_Consoles.GameBoy_A,
+	}
+
+	timedAction PlayFinalFantasy
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = fantasy_game_gb,
+	prop2           = Video_Game_Consoles.GameBoy_A,
+	}
+
+	timedAction PlayMario
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = mario_game_gb,
+	prop2           = Video_Game_Consoles.GameBoy_A,
+	}
+
+	timedAction PlayTetris
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = tetris_game_gb,
+	prop2           = Video_Game_Consoles.GameBoy_A,
+	}
+
+/***Play_Game_Gear***/
+
+	timedAction PlayStreetsOfRage2
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = sor2_game_gg,
+	prop2           = Video_Game_Consoles.Game_Gear_A,
+	}
+
+	timedAction PlayAxBattler
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = AxBattler_game_gg,
+	prop2           = Video_Game_Consoles.Game_Gear_A,
+	}
+
+	timedAction PlayShinobi2
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Shinobi_game_gg,
+	prop2           = Video_Game_Consoles.Game_Gear_A,
+	}
+
+	timedAction PlaySonicChaos
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Sonic_game_gg,
+	prop2           = Video_Game_Consoles.Game_Gear_A,
+	}
+
+	timedAction PlayVampireMoD
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Vampire_game_gg,
+	prop2           = Video_Game_Consoles.Game_Gear_A,
+	}
+
+/***Play_SNES***/
+
+	timedAction PlaySuperMarioWorld
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = MarioWorld_game_SNES,
+	prop2           = Video_Game_Consoles.SNES_Controller_A,
+	}
+	
+	timedAction PlaySecretOfMana
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Mana_game_SNES,
+	prop2           = Video_Game_Consoles.SNES_Controller_A,
+	}
+
+	timedAction PlayStarFox
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = StarFox_game_SNES,
+	prop2           = Video_Game_Consoles.SNES_Controller_A,
+	}
+
+	timedAction PlayMortalKombat2
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = MK2_game_SNES,
+	prop2           = Video_Game_Consoles.SNES_Controller_A,
+	}
+
+	timedAction PlayNBAJAM
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = NBA_game_SNES,
+	prop2           = Video_Game_Consoles.SNES_Controller_A,
+	}
+
+
+/***Play_Genesis***/
+
+	timedAction PlayAladdin
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Aladdin_game_Genesis,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayGoldenAxe
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Gaxe_game_Genesis,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayGhoulsAndGhosts
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Ghouls_game_Genesis,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlaySonic
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Sonic_game_Genesis,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayStreetFighter2
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Street_game_Genesis,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+/***Play_NES***/
+
+	timedAction PlayContra
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Contra_game_NES,
+	prop2           = Video_Game_Consoles.NES_Controller_A,
+	}
+
+	timedAction PlaySuperMario3
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Mario_game_NES,
+	prop2           = Video_Game_Consoles.NES_Controller_A,
+	}
+
+	timedAction PlayMegaMan
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Megaman_game_NES,
+	prop2           = Video_Game_Consoles.NES_Controller_A,
+	}
+
+	timedAction PlayMetroid
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Metroid_game_NES,
+	prop2           = Video_Game_Consoles.NES_Controller_A,
+	}
+
+	timedAction PlayTheLegendOfZelda
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Zelda_game_NES,
+	prop2           = Video_Game_Consoles.NES_Controller_A,
+	}
+
+/***Atari_Games***/
+
+	timedAction PlayCombat
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Combat_game_Atari,
+	prop2           = Video_Game_Consoles.Atari_Controller_A,
+	}
+
+	timedAction PlayPitfall
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Pitfall_game_Atari,
+	prop2           = Video_Game_Consoles.Atari_Controller_A,
+	}
+
+	timedAction PlayMSPacMan
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = MSPacman_game_Atari,
+	prop2           = Video_Game_Consoles.Atari_Controller_A,
+	}
+
+	timedAction PlaySpaceInvaders
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Spaceinvaders_game_Atari,
+	prop2           = Video_Game_Consoles.Atari_Controller_A,
+	}
+
+	timedAction PlayAsteroids
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Asteroids_game_Atari,
+	prop2           = Video_Game_Consoles.Atari_Controller_A,
+	}
+
+/***Battery***/
+	
+	timedAction GB_Battery
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakingElectrical,
+	sound		= BatteryIO_game_gb,
+	prop2 		= Video_Game_Consoles.GameBoy_A,
+    }
+	
+	timedAction GG_Battery
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakingElectrical,
+	sound		= BatteryIO_game_gb,
+	prop2 		= Video_Game_Consoles.Game_Gear_A,
+    }
+
+/***Dismantle***/
+
+	timedAction Dismantle_Console
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakingElectrical,
+	sound		= Dismantle,
+	prop1		= Base.Screwdriver,
+	prop2 		= Base.CDplayer,
+    }
+
+}
