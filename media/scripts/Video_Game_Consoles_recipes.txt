@@ -183,7 +183,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayStarFox,
 		Time = 200,
 		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -197,7 +197,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayMortalKombat2,
 		Time = 200,
 		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -211,7 +211,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayNBAJAM,
 		Time = 200,
 		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -227,7 +227,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayAladdin,
 		Time = 200,
 		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -241,7 +241,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayGoldenAxe,
 		Time = 200,
 		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -255,7 +255,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayGhoulsAndGhosts,
 		Time = 200,
 		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -269,7 +269,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlaySonic,
 		Time = 200,
 		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -283,7 +283,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayStreetFighter2,
 		Time = 200,
 		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -299,7 +299,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayContra,
 		Time = 200,
 		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -313,7 +313,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlaySuperMario3,
 		Time = 200,
 		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -327,7 +327,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayMegaMan,
 		Time = 200,
 		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -341,7 +341,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayMetroid,
 		Time = 200,
 		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -355,7 +355,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayTheLegendOfZelda,
 		Time = 200,
 		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -371,7 +371,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayCombat,
 		Time = 200,
 		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -385,7 +385,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayPitfall,
 		Time = 200,
 		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -399,7 +399,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayMSPacMan,
 		Time = 200,
 		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -413,7 +413,7 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlaySpaceInvaders,
 		Time = 200,
 		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
@@ -427,12 +427,156 @@ module Video_Game_Consoles
 		timedAction = Video_Game_Consoles.PlayAsteroids,
 		Time = 200,
 		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGB,
+		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
 		category = Leisure,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_Asteroids] mode:keep,
+		}
+	}
+
+/***Sega_CD***/
+
+	craftRecipe Play Sonic CD
+	{
+		timedAction = Video_Game_Consoles.PlaySonic,
+		Time = 200,
+		OnTest = VGC_OnTest_SegaCD,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.Sega_CD_Sonic] mode:keep,
+		}
+	}
+
+	craftRecipe Play Eye Of The Beholder
+	{
+		timedAction = Video_Game_Consoles.PlayBeholder,
+		Time = 200,
+		OnTest = VGC_OnTest_SegaCD,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.Sega_CD_beholder] mode:keep,
+		}
+	}
+
+	craftRecipe Play Dune
+	{
+		timedAction = Video_Game_Consoles.PlayDune,
+		Time = 200,
+		OnTest = VGC_OnTest_SegaCD,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.Sega_CD_dune] mode:keep,
+		}
+	}
+
+	craftRecipe Play Jurassic Park
+	{
+		timedAction = Video_Game_Consoles.Playjurassic,
+		Time = 200,
+		OnTest = VGC_OnTest_SegaCD,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.Sega_CD_jurasic] mode:keep,
+		}
+	}
+
+	craftRecipe Play Night Trap
+	{
+		timedAction = Video_Game_Consoles.PlayNightTrap,
+		Time = 200,
+		OnTest = VGC_OnTest_SegaCD,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.Sega_CD_nighttrap] mode:keep,
+		}
+	}
+
+/***Philips_CD_i***/
+
+	craftRecipe Play Link: The Faces of Evil
+	{
+		timedAction = Video_Game_Consoles.PlayLink,
+		Time = 200,
+		OnTest = VGC_OnTest_CD_I,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.CDi_Link] mode:keep,
+		}
+	}
+
+	craftRecipe Play The 7th Guest
+	{
+		timedAction = Video_Game_Consoles.Play7Guest,
+		Time = 200,
+		OnTest = VGC_OnTest_CD_I,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.CDi_7guest] mode:keep,
+		}
+	}
+
+	craftRecipe Play Lemmings
+	{
+		timedAction = Video_Game_Consoles.PlayLemmings,
+		Time = 200,
+		OnTest = VGC_OnTest_CD_I,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.CDi_lemmings] mode:keep,
+		}
+	}
+
+	craftRecipe Play Pac-Attack
+	{
+		timedAction = Video_Game_Consoles.PlayPacAttack,
+		Time = 200,
+		OnTest = VGC_OnTest_CD_I,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.CDi_pacattack] mode:keep,
+		}
+	}
+
+	craftRecipe Play Zelda: The Wand of Gamelon
+	{
+		timedAction = Video_Game_Consoles.PlayZelda,
+		Time = 200,
+		OnTest = VGC_OnTest_CD_I,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.CDi_zelda] mode:keep,
 		}
 	}
 
@@ -524,7 +668,7 @@ module Video_Game_Consoles
 		xpAward = Electricity:2,
 		inputs
 		{
-			item 1 [Video_Game_Consoles.Atari;Video_Game_Consoles.Game_Gear;Video_Game_Consoles.Genesis;Video_Game_Consoles.GameBoy;Video_Game_Consoles.NES;Video_Game_Consoles.SNES;Video_Game_Consoles.SegaCD;Video_Game_Consoles.SegaCD_empty] flags[IsEmpty] mode:destroy,
+			item 1 [Video_Game_Consoles.Atari;Video_Game_Consoles.Game_Gear;Video_Game_Consoles.Genesis;Video_Game_Consoles.GameBoy;Video_Game_Consoles.NES;Video_Game_Consoles.SNES;Video_Game_Consoles.SegaCD_empty;Video_Game_Consoles.Philips_CD_I] flags[IsEmpty] mode:destroy,
 			item 1 [Base.Screwdriver] mode:keep,
 		}
 		outputs
@@ -548,6 +692,23 @@ module Video_Game_Consoles
 		outputs
 		{
 			item 1 Video_Game_Consoles.SegaCD,
+		}
+	}
+
+	craftRecipe Disconnect Sega CD
+	{
+		timedAction = Video_Game_Consoles.Dismantle_Console,
+		Time = 60,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 [Video_Game_Consoles.SegaCD] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Video_Game_Consoles.SegaCD_empty,
+			item 1 Video_Game_Consoles.Genesis,
 		}
 	}
 

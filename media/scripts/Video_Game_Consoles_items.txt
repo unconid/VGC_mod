@@ -72,6 +72,17 @@ module Video_Game_Consoles
 
     }
 	
+	item Philips_CD_I
+    {
+        DisplayName	            =	Philips CD-i,
+        Weight	                =	1.5,
+        Icon	                =	CD_I_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Main,
+		Tags                    =   VGC_CD_I,
+
+    }
+	
 	item GameBoy
     {
         DisplayName	            =	Game Boy,
@@ -383,6 +394,112 @@ module Video_Game_Consoles
 
     }
 
+/*Sega_CD*/
+
+
+	item Sega_CD_Sonic
+    {
+        DisplayName	            =	SegaCD Sonic CD,
+        Weight	                =	0.1,
+        Icon	                =	sCD_Case_Sonic_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	sCD_Case_Sonic,
+
+    }
+
+	item Sega_CD_beholder
+    {
+        DisplayName	            =	SegaCD Eye of the Beholder,
+        Weight	                =	0.1,
+        Icon	                =	sCD_Case_beholder_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	sCD_Case_beholder,
+
+    }
+
+	item Sega_CD_dune
+    {
+        DisplayName	            =	SegaCD Dune,
+        Weight	                =	0.1,
+        Icon	                =	sCD_Case_dune_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	sCD_Case_dune,
+
+    }
+
+	item Sega_CD_jurasic
+    {
+        DisplayName	            =	SegaCD Jurassic Park,
+        Weight	                =	0.1,
+        Icon	                =	sCD_Case_jurasic_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	sCD_Case_jurasic,
+
+    }
+
+	item Sega_CD_nighttrap
+    {
+        DisplayName	            =	SegaCD Night Trap,
+        Weight	                =	0.1,
+        Icon	                =	sCD_Case_nighttrap_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	sCD_Case_nighttrap,
+
+    }
+
+/*Philips_CD_i*/
+
+
+	item CDi_Link
+    {
+        DisplayName	            =	CDi Link: The Faces of Evil,
+        Weight	                =	0.1,
+        Icon	                =	CDi_Case_Link_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Case_Link,
+
+    }
+
+	item CDi_7guest
+    {
+        DisplayName	            =	CDi The 7th Guest,
+        Weight	                =	0.1,
+        Icon	                =	CDi_Case_7guest_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Case_7guest,
+
+    }
+	
+	item CDi_lemmings
+    {
+        DisplayName	            =	CDi Lemmings,
+        Weight	                =	0.1,
+        Icon	                =	CDi_Case_lemmings_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Case_lemmings,
+
+    }
+
+	item CDi_pacattack
+    {
+        DisplayName	            =	CDi Pac-Attack,
+        Weight	                =	0.1,
+        Icon	                =	CDi_Case_pacattack_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Case_pacattack,
+
+    }
+
+	item CDi_zelda
+    {
+        DisplayName	            =	CDi Zelda: The Wand of Gamelon,
+        Weight	                =	0.1,
+        Icon	                =	CDi_Case_zelda_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	CD_I_Case_zelda,
+
+    }
+
 /*Game_Gear*/
 
 	item GG_Cartridge_sor2
@@ -477,6 +594,29 @@ module Video_Game_Consoles
         DisplayCategory 		=	Electronics,
     }
 
+	item Cartridge_Dummy6
+    {
+        DisplayName	            =	VGC DummyItem6,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item Cartridge_Dummy7
+    {
+        DisplayName	            =	VGC DummyItem7,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item Cartridge_Dummy8
+    {
+        DisplayName	            =	VGC DummyItem8,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }	
 
 }
 

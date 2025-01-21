@@ -49,6 +49,13 @@ module Video_Game_Consoles
 		scale       = 1,
 	}
 
+	model CD_I_Main
+	{
+		mesh        = WorldItems/CD_I_Main,
+		texture     = WorldItems/CD_I_Main,
+		scale       = 0.9,
+	}
+
 	model NES_Main
 	{
 		mesh        = WorldItems/NES_Main,
@@ -84,6 +91,13 @@ module Video_Game_Consoles
 		mesh        = WorldItems/SNES_Controller_A,
 		texture     = WorldItems/SNES_Main,
 		scale       = 1,
+	}
+
+	model CD_I_Controller_A
+	{
+		mesh        = WorldItems/CD_I_Controller_A,
+		texture     = WorldItems/CD_I_Main,
+		scale       = 1.3,
 	}
 
 	model NES_Controller_A
@@ -345,6 +359,80 @@ module Video_Game_Consoles
 		mesh        = WorldItems/GG_Cartridge,
 		texture     = WorldItems/GG_Cartridge_Vampire,
 		scale       = 0.1,
+	}
+
+/*CD_i*/
+
+	model CD_I_Case_Link
+	{
+		mesh        = WorldItems/CDi_Case,
+		texture     = WorldItems/CDi_Case_Link,
+		scale       = 0.9,
+	}
+
+	model CD_I_Case_7guest
+	{
+		mesh        = WorldItems/CDi_Case,
+		texture     = WorldItems/CDi_Case_7guest,
+		scale       = 0.9,
+	}
+
+	model CD_I_Case_lemmings
+	{
+		mesh        = WorldItems/CDi_Case,
+		texture     = WorldItems/CDi_Case_lemmings,
+		scale       = 0.9,
+	}
+
+	model CD_I_Case_pacattack
+	{
+		mesh        = WorldItems/CDi_Case,
+		texture     = WorldItems/CDi_Case_pacattack,
+		scale       = 0.9,
+	}
+
+	model CD_I_Case_zelda
+	{
+		mesh        = WorldItems/CDi_Case,
+		texture     = WorldItems/CDi_Case_zelda,
+		scale       = 0.9,
+	}
+
+/*Sega_CD*/
+
+	model sCD_Case_Sonic
+	{
+		mesh        = WorldItems/sCD_Case,
+		texture     = WorldItems/sCD_Case_Sonic,
+		scale       = 0.9,
+	}
+
+	model sCD_Case_beholder
+	{
+		mesh        = WorldItems/sCD_Case,
+		texture     = WorldItems/sCD_Case_beholder,
+		scale       = 0.9,
+	}
+
+	model sCD_Case_dune
+	{
+		mesh        = WorldItems/sCD_Case,
+		texture     = WorldItems/sCD_Case_dune,
+		scale       = 0.9,
+	}
+
+	model sCD_Case_jurasic
+	{
+		mesh        = WorldItems/sCD_Case,
+		texture     = WorldItems/sCD_Case_jurasic,
+		scale       = 0.9,
+	}
+
+	model sCD_Case_nighttrap
+	{
+		mesh        = WorldItems/sCD_Case,
+		texture     = WorldItems/sCD_Case_nighttrap,
+		scale       = 0.9,
 	}
 
 }

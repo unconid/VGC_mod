@@ -457,4 +457,148 @@ module Video_Game_Consoles
 		}
 	}
 
+/***Sega_CD***/
+
+	sound Sonic_game_sCD
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Sonic_game_sCD.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound Beholder_game_sCD
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Beholder_game_sCD.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound Dune_game_sCD
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Dune_game_sCD.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound jurassic_game_sCD
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/jurassic_game_sCD.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound NightTrap_game_sCD
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/NightTrap_game_sCD.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+/***Philips_CDi***/
+
+	sound Link_game_CDi
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Link_game_CDi.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound 7Guest_game_CDi
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/7Guest_game_CDi.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound Lemmings_game_CDi
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Lemmings_game_CDi.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound PacAttack_game_CDi
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/PacAttack_game_CDi.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
+	sound Zelda_game_CDi
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/Zelda_game_CDi.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 1,
+		}
+	}
+
 }

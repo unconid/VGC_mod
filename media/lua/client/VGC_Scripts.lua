@@ -1,5 +1,5 @@
 ------ Made By Unconid ------
------- Version 1.11 ------
+------ Version 2.00 ------
 
 -- Function to play video game and adjust player's unhappiness and boredom levels
 function VGC_PlayGame(craftRecipeData, character)
@@ -9,11 +9,20 @@ function VGC_PlayGame(craftRecipeData, character)
     -- Decrease unhappiness and boredom levels by random amounts
     bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() - ZombRand(6, 21))
     bodyDamage:setBoredomLevel(bodyDamage:getBoredomLevel() - ZombRand(11, 31))
-    
+
     -- Set base chance for unhappiness level increase to 10%
     if ZombRand(1, 101) <= 10 then
         -- Increase the unhappiness level by a random amount 
         bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + ZombRand(20, 31))
+        -- Make the character say something
+        local sayings = {
+            "WHAT WERE THEY THINKING?!?",
+            "WHY ARE THERE NO CONTINUES WHYYYYYYYY",
+            "AAAASSSSSS",
+            "THIS GAME SUCKS"
+        }
+        local randomIndex = ZombRand(#sayings) + 1
+        player:Say(sayings[randomIndex])
     end
 
     -- Decrease the use delta of the item being used
@@ -157,5 +166,9 @@ function VGC_OnTest_Genesis(recipe, player, item)
 end
 
 function VGC_OnTest_SegaCD(recipe, player, item)
-    return VGC_OnTest_CanPerform(recipe, player, item, "VGC_Genesis", "SegaCD")
+    return VGC_OnTest_CanPerform(recipe, player, item, "VGC_SegaCD", "SegaCD")
+end
+
+function VGC_OnTest_CD_I(recipe, player, item)
+    return VGC_OnTest_CanPerform(recipe, player, item, "VGC_CD_I", "CDi")
 end

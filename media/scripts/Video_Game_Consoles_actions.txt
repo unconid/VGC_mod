@@ -254,6 +254,90 @@ module Video_Game_Consoles
 	prop2           = Video_Game_Consoles.Atari_Controller_A,
 	}
 
+/***CDi_Games***/
+
+	timedAction PlayLink
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Link_game_CDi,
+	prop2           = Video_Game_Consoles.CD_I_Controller_A,
+	}
+
+	timedAction Play7Guest
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = 7Guest_game_CDi,
+	prop2           = Video_Game_Consoles.CD_I_Controller_A,
+	}
+
+	timedAction PlayLemmings
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Lemmings_game_CDi,
+	prop2           = Video_Game_Consoles.CD_I_Controller_A,
+	}
+
+	timedAction PlayPacAttack
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = PacAttack_game_CDi,
+	prop2           = Video_Game_Consoles.CD_I_Controller_A,
+	}
+
+	timedAction PlayZelda
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Zelda_game_CDi,
+	prop2           = Video_Game_Consoles.CD_I_Controller_A,
+	}
+
+/***Sega_CD_Games***/
+
+	timedAction PlaySonic
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Sonic_game_sCD,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayBeholder
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Beholder_game_sCD,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayDune
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = Dune_game_sCD,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+	
+	timedAction Playjurassic
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = jurassic_game_sCD,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
+	timedAction PlayNightTrap
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = NightTrap_game_sCD,
+	prop2           = Video_Game_Consoles.Genesis_Controller_A,
+	}
+
 /***Battery***/
 	
 	timedAction GB_Battery
