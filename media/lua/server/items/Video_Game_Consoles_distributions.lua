@@ -63,6 +63,7 @@ local itemList2 = {
 	"Video_Game_Consoles.SegaCD_empty",
 	"Video_Game_Consoles.Atari",
 	"Video_Game_Consoles.NES",
+	"Video_Game_Consoles.SNES",
 	"Video_Game_Consoles.Philips_CD_I",
 	"Video_Game_Consoles.Game_Gear",
 }
