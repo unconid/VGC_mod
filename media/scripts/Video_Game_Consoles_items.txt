@@ -68,7 +68,8 @@ module Video_Game_Consoles
         Weight	                =	0.5,
         Icon	                =	Sega_CD_empty_i,
         DisplayCategory 		=	Electronics,
-        WorldStaticModel		=	VGC_Console;Sega_CD_Empty,
+        WorldStaticModel		=	Sega_CD_Empty,
+		Tags                    =   VGC_Console,
 
     }
 	

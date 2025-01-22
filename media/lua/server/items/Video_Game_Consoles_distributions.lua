@@ -118,7 +118,6 @@ local itemList2 = {
   addConsoleLoot("ShelfGeneric", 1)
   addConsoleLoot("UniversityWardrobe", 4)
   addConsoleLoot("WardrobeChild", 2)
-  addConsoleLoot("WardrobeMan", 1)
 
 -- Function to replace dummy items in a container with real items
 local function replaceDummies(container)
