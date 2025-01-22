@@ -666,7 +666,7 @@ module Video_Game_Consoles
 		xpAward = Electricity:2,
 		inputs
 		{
-			item 1 [Video_Game_Consoles.Atari;Video_Game_Consoles.Game_Gear;Video_Game_Consoles.Genesis;Video_Game_Consoles.GameBoy;Video_Game_Consoles.NES;Video_Game_Consoles.SNES;Video_Game_Consoles.SegaCD_empty;Video_Game_Consoles.Philips_CD_I] flags[IsEmpty] mode:destroy,
+			item 1 tags[VGC_Console] flags[IsEmpty] mode:destroy,
 			item 1 [Base.Screwdriver] mode:keep,
 		}
 		outputs

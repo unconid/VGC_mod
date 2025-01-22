@@ -13,7 +13,7 @@ module Video_Game_Consoles
         Icon	                =	SuperNintendo_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	SNES_Main,
-		Tags                    =   VGC_SNES,
+		Tags                    =   VGC_Console;VGC_SNES,
 
     } 
 	
@@ -24,7 +24,7 @@ module Video_Game_Consoles
         Icon	                =	Atari_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	Atari_Main,
-		Tags                    =   VGC_Atari26,
+		Tags                    =   VGC_Console;VGC_Atari26,
 
     }
 	
@@ -35,7 +35,7 @@ module Video_Game_Consoles
         Icon	                =	NES_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	NES_Main,
-		Tags                    =   VGC_NES,
+		Tags                    =   VGC_Console;VGC_NES,
 
     }
 	
@@ -47,7 +47,7 @@ module Video_Game_Consoles
         Icon	                =	Genesis_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	Genesis_Main,
-		Tags                    =   VGC_Genesis,
+		Tags                    =   VGC_Console;VGC_Genesis,
 
     } 
 	
@@ -58,7 +58,7 @@ module Video_Game_Consoles
         Icon	                =	Sega_CD_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	Sega_CD_Connected,
-		Tags                    =   VGC_SegaCD;VGC_Genesis,
+		Tags                    =   VGC_Console;VGC_SegaCD;VGC_Genesis,
 
     }
 
@@ -68,7 +68,7 @@ module Video_Game_Consoles
         Weight	                =	0.5,
         Icon	                =	Sega_CD_empty_i,
         DisplayCategory 		=	Electronics,
-        WorldStaticModel		=	Sega_CD_Empty,
+        WorldStaticModel		=	VGC_Console;Sega_CD_Empty,
 
     }
 	
@@ -79,7 +79,7 @@ module Video_Game_Consoles
         Icon	                =	CD_I_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	CD_I_Main,
-		Tags                    =   VGC_CD_I,
+		Tags                    =   VGC_Console;VGC_CD_I,
 
     }
 	
@@ -134,7 +134,6 @@ module Video_Game_Consoles
         Icon	                =	GB_Cartridge_Zelda_i,
         DisplayCategory 		=	Electronics,
         WorldStaticModel		=	GB_Cartridge_Zelda,
-		Tags                    =   VGC_Game,
 
     }
 	
