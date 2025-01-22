@@ -627,12 +627,11 @@ module Video_Game_Consoles
         category = Electrical,
         inputs
         {
-            item 1 [Video_Game_Consoles.GameBoy] flags[IsEmpty] mode:destroy itemcount,
-			item 1 [Base.Battery] mode:destroy itemcount,
+			item 1 tags[VGC_GB_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
         }
 		outputs
         {
-            item 1  Video_Game_Consoles.GameBoy,
         }
 
     }
@@ -646,12 +645,11 @@ module Video_Game_Consoles
         category = Electrical,
         inputs
         {
-            item 1 [Video_Game_Consoles.Game_Gear] flags[IsEmpty] mode:destroy itemcount,
-			item 1 [Base.Battery] mode:destroy itemcount,
+			item 1 tags[VGC_GG_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
         }
 		outputs
         {
-            item 1  Video_Game_Consoles.Game_Gear,
         }
 
     }
