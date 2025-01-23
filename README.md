@@ -21,13 +21,15 @@ Welcome to the **Zomboid Video Game Consoles Mod**! Relive the retro gaming days
   - SNES
   - NES
   - Sega Genesis
+  - Sega CD
   - Atari 2600
+  - Philips CD-i
 - **Game Cartridges**: Each console comes with multiple cartridges for endless nostalgia.
 - **Interactive Gameplay**:
   - Stand near the console with a cartridge in your inventory and right-click to play.
   - For handhelds like Gameboy and GameGear, right-click the device with a cartridge in your inventory to start playing.
 - **Realistic Mechanics**:
-  - Consoles require power.
+  - Consoles require power and a TV.
   - Handhelds need batteries to function.
   - Playing reduces boredom and unhappiness but may occasionally increase unhappiness (losing a game can be frustrating!).
 
