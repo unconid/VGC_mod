@@ -88,7 +88,7 @@ local itemList2 = {
 -- Adding console loot to various procedural distributions
   addConsoleLoot("BedroomDresserChild", 2)
   addConsoleLoot("BedroomSidetableChild", 2)
-  addConsoleLoot("BookStoreCounter", 10)
+  addConsoleLoot("BookStoreCounter", 5)
   addConsoleLoot("BreakRoomShelves", 1)
   addConsoleLoot("ClassroomDesk", 1)
   addConsoleLoot("ClassroomSecondaryDesk", 4)
@@ -101,52 +101,67 @@ local itemList2 = {
   addConsoleLoot("DeskGeneric", 1)
   addConsoleLoot("ElectronicStoreMisc", 2)
   addConsoleLoot("ElectronicStoreMusic", 1)
-  addConsoleLoot("Gifts", 4)
   addConsoleLoot("GigamartHouseElectronics", 10)
-  addConsoleLoot("Hobbies", 4)
-  addConsoleLoot("HolidayStuff", 4)
   addConsoleLoot("LivingRoomShelf", 1)
   addConsoleLoot("LivingRoomShelfNoTapes", 1)
   addConsoleLoot("LivingRoomWardrobe", 2)
   addConsoleLoot("MechanicShelfElectric", 1)
-  addConsoleLoot("MusicStoreCDs", 1)
   addConsoleLoot("MusicStoreCDs", 2)
   addConsoleLoot("MusicStoreCases", 1)
   addConsoleLoot("OfficeDeskHome", 1)
-  addConsoleLoot("SchoolLockers", 4)
-  addConsoleLoot("SchoolLockersBad", 10)
+  addConsoleLoot("SchoolLockers", 0.1)
+  addConsoleLoot("SchoolLockersBad", 0.5)
   addConsoleLoot("ShelfGeneric", 1)
   addConsoleLoot("UniversityWardrobe", 4)
   addConsoleLoot("WardrobeChild", 2)
 
 -- Function to replace dummy items in a container with real items
 local function replaceDummies(container)
-    local dummyGroups = {
-        { types = {
-            'Video_Game_Consoles.Cartridge_Dummy3',
-            'Video_Game_Consoles.Cartridge_Dummy4',
-            'Video_Game_Consoles.Cartridge_Dummy5',
-            'Video_Game_Consoles.Cartridge_Dummy6',
-            'Video_Game_Consoles.Cartridge_Dummy7',
-            'Video_Game_Consoles.Cartridge_Dummy8',
-        }, itemList = itemList },
-        { types = {
-            'Video_Game_Consoles.Cartridge_Dummy1',
-            'Video_Game_Consoles.Cartridge_Dummy2',
-        }, itemList = itemList2 }
-    }
+	if not container then
+		print("Error: Invalid container")
+		return
+	end
+  
+	if container:getType() == "zombie.inventory" then
+		print("Error: Cannot replace items in zombie inventory")
+		return
+	end
+  
+	if type(container.getAllType) ~= "function" then
+		print("Error: Container does not have getAllType method")
+		return
+	end
 
-    for _, group in ipairs(dummyGroups) do
-        for _, dummyType in ipairs(group.types) do
-            local dummies = container:getAllType(dummyType)
-            for i = 0, dummies:size() - 1 do
-                container:Remove(dummies:get(i))
-                local itemChoice = ZombRand(#group.itemList) + 1
-                local item = container:AddItem(group.itemList[itemChoice])
-                container:addItemOnServer(item)
-            end
-        end
-    end
+  local dummyGroups = {
+      { types = {
+          'Video_Game_Consoles.Cartridge_Dummy3',
+          'Video_Game_Consoles.Cartridge_Dummy4',
+          'Video_Game_Consoles.Cartridge_Dummy5',
+          'Video_Game_Consoles.Cartridge_Dummy6',
+          'Video_Game_Consoles.Cartridge_Dummy7',
+          'Video_Game_Consoles.Cartridge_Dummy8',
+      }, itemList = itemList },
+      { types = {
+          'Video_Game_Consoles.Cartridge_Dummy1',
+          'Video_Game_Consoles.Cartridge_Dummy2',
+      }, itemList = itemList2 }
+  }
+
+  for _, group in ipairs(dummyGroups) do
+      if group.itemList and #group.itemList > 0 then
+          for _, dummyType in ipairs(group.types) do
+              local dummies = container:getAllType(dummyType)
+              for i = 0, dummies:size() - 1 do
+                  container:Remove(dummies:get(i))
+                  local itemChoice = ZombRand(#group.itemList) + 1
+                  local item = container:AddItem(group.itemList[itemChoice])
+                  container:addItemOnServer(item)
+              end
+          end
+      else
+          print("Error: itemList is nil or empty for dummyType group")
+      end
+  end
 end
 
 -- Function to handle filling containers with items
