@@ -123,6 +123,23 @@ module Video_Game_Consoles
 
     }
 
+	item Atari_Lynx
+    {
+        DisplayName	            =	Atari Lynx,
+        Weight	                =	0.7,
+		Type					=	Drainable,
+		UseDelta 				=	0.0001,
+		UseWhileEquipped		=	FALSE
+		CantBeConsolided    	=	TRUE,
+		KeepOnDeplete			= 	TRUE,
+		DisappearOnUse			=	FALSE,
+        Icon	                =	Lynx_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_Main,
+		Tags                    =   VGC_Console;VGC_Lynx_Console,
+
+    }
+
 	
 /****************games****************/
 
@@ -551,7 +568,59 @@ module Video_Game_Consoles
         WorldStaticModel		=	GG_Cartridge_Vampire,
 
     }
-	
+
+/*Atari_Lynx*/
+
+	item Lynx_cartridge_checkered
+    {
+        DisplayName	            =	Lynx Checkered Flag,
+        Weight	                =	0.1,
+        Icon	                =	Lynx_cartridge_checkered_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_cartridge_checkered,
+
+    }
+
+	item Lynx_cartridge_chips
+    {
+        DisplayName	            =	Lynx Chip's Challenge,
+        Weight	                =	0.1,
+        Icon	                =	Lynx_cartridge_chips_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_cartridge_chips,
+
+    }
+
+	item Lynx_cartridge_klax
+    {
+        DisplayName	            =	Lynx KLAX,
+        Weight	                =	0.1,
+        Icon	                =	Lynx_cartridge_klax_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_cartridge_klax,
+
+    }
+
+	item Lynx_cartridge_rampart
+    {
+        DisplayName	            =	Lynx Rampart,
+        Weight	                =	0.1,
+        Icon	                =	Lynx_cartridge_rampart_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_cartridge_rampart,
+
+    }
+
+	item Lynx_cartridge_todds
+    {
+        DisplayName	            =	Lynx Todd's Adventures,
+        Weight	                =	0.1,
+        Icon	                =	Lynx_cartridge_todds_i,
+        DisplayCategory 		=	Electronics,
+        WorldStaticModel		=	Lynx_cartridge_todds,
+
+    }
+
 /*Dummies*/
 
 	item Cartridge_Dummy1
@@ -617,6 +686,22 @@ module Video_Game_Consoles
         Icon	                =	Dummy_i,
         DisplayCategory 		=	Electronics,
     }	
+
+	item Cartridge_Dummy9
+    {
+        DisplayName	            =	VGC DummyItem9,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
+
+	item Cartridge_Dummy10
+    {
+        DisplayName	            =	VGC DummyItem10,
+        Weight	                =	0.02,
+        Icon	                =	Dummy_i,
+        DisplayCategory 		=	Electronics,
+    }
 
 }
 

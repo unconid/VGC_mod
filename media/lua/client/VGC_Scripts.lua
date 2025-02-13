@@ -172,3 +172,7 @@ end
 function VGC_OnTest_CD_I(recipe, player, item)
     return VGC_OnTest_CanPerform(recipe, player, item, "VGC_CD_I", "CDi")
 end
+
+function VGC_OnTest_CD_I(recipe, player, item)
+    return VGC_OnTest_CanPerform(recipe, player, item, "VGC_CD_I", "Lynx")
+end

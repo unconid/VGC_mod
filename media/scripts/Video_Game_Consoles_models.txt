@@ -70,6 +70,13 @@ module Video_Game_Consoles
 		scale       = 0.1,
 	}
 	
+	model Lynx_Main
+	{
+		mesh        = WorldItems/Lynx_Main,
+		texture     = WorldItems/Lynx_Main,
+		scale       = 1,
+	}
+	
 /****************animation_props****************/
 	
 	model GameBoy_A
@@ -125,6 +132,13 @@ module Video_Game_Consoles
 	{
 		mesh        = WorldItems/Game_Gear_A,
 		texture     = WorldItems/GG_Main,
+		scale       = 0.1,
+	}
+
+	model Lynx_A
+	{
+		mesh        = WorldItems/Lynx_A,
+		texture     = WorldItems/Lynx_Main,
 		scale       = 0.1,
 	}
 
@@ -433,6 +447,43 @@ module Video_Game_Consoles
 		mesh        = WorldItems/sCD_Case,
 		texture     = WorldItems/sCD_Case_nighttrap,
 		scale       = 0.9,
+	}
+
+/*Atari_Lynx*/
+
+	model Lynx_cartridge_checkered
+	{
+		mesh        = WorldItems/Lynx_Cartridge,
+		texture     = WorldItems/Lynx_cartridge_checkered,
+		scale       = 1,
+	}
+
+	model Lynx_cartridge_chips
+	{
+		mesh        = WorldItems/Lynx_Cartridge,
+		texture     = WorldItems/Lynx_cartridge_chips,
+		scale       = 1,
+	}
+
+	model Lynx_cartridge_klax
+	{
+		mesh        = WorldItems/Lynx_Cartridge,
+		texture     = WorldItems/Lynx_cartridge_klax,
+		scale       = 1,
+	}
+
+	model Lynx_cartridge_rampart
+	{
+		mesh        = WorldItems/Lynx_Cartridge,
+		texture     = WorldItems/Lynx_cartridge_rampart,
+		scale       = 1,
+	}
+
+	model Lynx_cartridge_todds
+	{
+		mesh        = WorldItems/Lynx_Cartridge,
+		texture     = WorldItems/Lynx_cartridge_todds,
+		scale       = 1,
 	}
 
 }

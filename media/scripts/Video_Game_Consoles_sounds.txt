@@ -601,4 +601,76 @@ module Video_Game_Consoles
 		}
 	}
 
+/***Atari_Lynx***/
+
+	sound checkered_game_Lynx
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/checkered_game_Lynx.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.4,
+		}
+	}
+
+	sound chips_game_Lynx
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/chips_game_Lynx.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.4,
+		}
+	}
+
+	sound klax_game_Lynx
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/klax_game_Lynx.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.4,
+		}
+	}
+
+	sound rampart_game_Lynx
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/rampart_game_Lynx.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.4,
+		}
+	}
+	
+	sound todds_game_Lynx
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/todds_game_Lynx.ogg,
+			distanceMin = 0,
+			distanceMax = 4,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.4,
+		}
+	}
+
 }

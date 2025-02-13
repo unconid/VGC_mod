@@ -1,5 +1,5 @@
 ------ Made By Unconid ------
------- Version 2.00 ------
+------ Version 2.04 ------
 
 -- List of dummy console items
 local consoleItems = {
@@ -11,6 +11,8 @@ local consoleItems = {
 	"Video_Game_Consoles.Cartridge_Dummy6",
 	"Video_Game_Consoles.Cartridge_Dummy7",
 	"Video_Game_Consoles.Cartridge_Dummy8",
+	"Video_Game_Consoles.Cartridge_Dummy9",
+	"Video_Game_Consoles.Cartridge_Dummy10",
   }
   
   -- list of items to replace the dummy with
@@ -55,6 +57,11 @@ local itemList ={
 	"Video_Game_Consoles.CDi_lemmings",
 	"Video_Game_Consoles.CDi_pacattack",
 	"Video_Game_Consoles.CDi_zelda",
+	"Video_Game_Consoles.Lynx_cartridge_checkered",
+	"Video_Game_Consoles.Lynx_cartridge_chips",
+	"Video_Game_Consoles.Lynx_cartridge_klax",
+	"Video_Game_Consoles.Lynx_cartridge_rampart",
+	"Video_Game_Consoles.Lynx_cartridge_todds",
 }
 
 local itemList2 = {
@@ -66,6 +73,7 @@ local itemList2 = {
 	"Video_Game_Consoles.SNES",
 	"Video_Game_Consoles.Philips_CD_I",
 	"Video_Game_Consoles.Game_Gear",
+	"Video_Game_Consoles.Atari_Lynx",
 }
   -- Function to add console loot to procedural distributions
   local function addConsoleLoot(proc_name, chance)
@@ -117,55 +125,53 @@ local itemList2 = {
 
 -- Function to replace dummy items in a container with real items
 local function replaceDummies(container)
-	if not container then
-		print("Error: Invalid container")
-		return
-	end
-  
-	if container:getType() == "zombie.inventory" then
-		print("Error: Cannot replace items in zombie inventory")
-		return
-	end
-  
-	if type(container.getAllType) ~= "function" then
-		print("Error: Container does not have getAllType method")
-		return
-	end
+    if not container then
+        print("Error: Invalid container")
+        return
+    end
 
-  local dummyGroups = {
-      { types = {
-          'Video_Game_Consoles.Cartridge_Dummy3',
-          'Video_Game_Consoles.Cartridge_Dummy4',
-          'Video_Game_Consoles.Cartridge_Dummy5',
-          'Video_Game_Consoles.Cartridge_Dummy6',
-          'Video_Game_Consoles.Cartridge_Dummy7',
-          'Video_Game_Consoles.Cartridge_Dummy8',
-      }, itemList = itemList },
-      { types = {
-          'Video_Game_Consoles.Cartridge_Dummy1',
-          'Video_Game_Consoles.Cartridge_Dummy2',
-      }, itemList = itemList2 }
-  }
+    local dummyGroups = {
+        { types = {
+            'Video_Game_Consoles.Cartridge_Dummy4',
+            'Video_Game_Consoles.Cartridge_Dummy5',
+            'Video_Game_Consoles.Cartridge_Dummy6',
+            'Video_Game_Consoles.Cartridge_Dummy7',
+            'Video_Game_Consoles.Cartridge_Dummy8',
+			"Video_Game_Consoles.Cartridge_Dummy9",
+			"Video_Game_Consoles.Cartridge_Dummy10",
+        }, itemList = itemList },
+        { types = {
+            'Video_Game_Consoles.Cartridge_Dummy1',
+            'Video_Game_Consoles.Cartridge_Dummy2',
+			"Video_Game_Consoles.Cartridge_Dummy3",
+        }, itemList = itemList2 }
+    }
 
-  for _, group in ipairs(dummyGroups) do
-      if group.itemList and #group.itemList > 0 then
-          for _, dummyType in ipairs(group.types) do
-              local dummies = container:getAllType(dummyType)
-              for i = 0, dummies:size() - 1 do
-                  container:Remove(dummies:get(i))
-                  local itemChoice = ZombRand(#group.itemList) + 1
-                  local item = container:AddItem(group.itemList[itemChoice])
-                  container:addItemOnServer(item)
-              end
-          end
-      else
-          print("Error: itemList is nil or empty for dummyType group")
-      end
-  end
+    for _, group in ipairs(dummyGroups) do
+        if group.itemList and #group.itemList > 0 then
+            for _, dummyType in ipairs(group.types) do
+                local dummies = container:getAllType(dummyType)
+                for i = 0, dummies:size() - 1 do
+                    container:Remove(dummies:get(i))
+                    local itemChoice = ZombRand(#group.itemList) + 1
+                    local item = container:AddItem(group.itemList[itemChoice])
+                    container:addItemOnServer(item)
+                end
+            end
+        else
+            print("Error: itemList is nil or empty for dummyType group")
+        end
+    end
 end
 
 -- Function to handle filling containers with items
 local function onFillContainer(_roomName, _containerType, container)
+    -- Check if the container is an instance of ItemContainer
+    if not instanceof(container, "ItemContainer") then
+        print("Error: Container is not an instance of ItemContainer")
+        return
+    end
+
     replaceDummies(container)
 end
 

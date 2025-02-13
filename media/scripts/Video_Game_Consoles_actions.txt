@@ -338,6 +338,48 @@ module Video_Game_Consoles
 	prop2           = Video_Game_Consoles.Genesis_Controller_A,
 	}
 
+/***Play_Lynx***/
+
+	timedAction PlayCheckere
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = checkered_game_Lynx,
+	prop2           = Video_Game_Consoles.Lynx_A,
+	}
+
+	timedAction PlayChips
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = chips_game_Lynx,
+	prop2           = Video_Game_Consoles.Lynx_A,
+	}
+
+	timedAction PlayKlax
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = klax_game_Lynx,
+	prop2           = Video_Game_Consoles.Lynx_A,
+	}
+
+	timedAction PlayRampart
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = rampart_game_Lynx,
+	prop2           = Video_Game_Consoles.Lynx_A,
+	}
+
+	timedAction PlayTodds
+	{
+		metabolics      = SedentaryActivity,
+		actionAnim      = MakingElectrical,
+	sound           = todds_game_Lynx,
+	prop2           = Video_Game_Consoles.Lynx_A,
+	}
+
 /***Battery***/
 	
 	timedAction GB_Battery
@@ -354,6 +396,14 @@ module Video_Game_Consoles
         actionAnim      = MakingElectrical,
 	sound		= BatteryIO_game_gb,
 	prop2 		= Video_Game_Consoles.Game_Gear_A,
+    }
+
+	timedAction Lynx_Battery
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakingElectrical,
+	sound		= BatteryIO_game_gb,
+	prop2 		= Video_Game_Consoles.Lynx_A,
     }
 
 /***Dismantle***/

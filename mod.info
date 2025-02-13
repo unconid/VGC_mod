@@ -3,14 +3,9 @@ id=Video_Game_Consoles
 description=Adds playable video game consoles. <LINE>
 description=Works on existing saves. <LINE>
 description=Includes: <LINE>
-description=                 Gameboy <LINE>
-description=                 GameGear <LINE>
-description=                 SNES <LINE>
-description=                 NES <LINE>
-description=                 Sega Genesis <LINE>
-description=                 Sega CD <LINE>
-description=                 Atari 2600 <LINE>
-description=                 Philips CD-i <LINE>
+description=                 Gameboy, GameGear, Lynx <LINE>
+description=                 NES,SNES, Sega Genesis, Atari 2600 <LINE>
+description=                 Sega CD, Philips CD-i <LINE>
 
 modversion=2.3
 author=Unconid

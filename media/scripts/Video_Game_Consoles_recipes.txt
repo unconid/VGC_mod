@@ -580,6 +580,78 @@ module Video_Game_Consoles
 		}
 	}
 
+/***Atari_Lynx***/
+
+	craftRecipe Play Checkered Flag
+	{
+		timedAction = Video_Game_Consoles.PlayCheckere,
+		Time = 200,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+            item 1 tags[VGC_Lynx_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Lynx_cartridge_checkered] mode:keep,
+		}
+	}
+
+	craftRecipe Play Chip's Challenge
+	{
+		timedAction = Video_Game_Consoles.PlayChips,
+		Time = 200,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+		    item 1 tags[VGC_Lynx_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Lynx_cartridge_chips] mode:keep,
+		}
+	}
+
+	craftRecipe Play KLAX
+	{
+		timedAction = Video_Game_Consoles.PlayKlax,
+		Time = 200,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 tags[VGC_Lynx_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Lynx_cartridge_klax] mode:keep,
+		}
+	}
+
+	craftRecipe Play Rampart
+	{
+		timedAction = Video_Game_Consoles.PlayRampart,
+		Time = 200,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 tags[VGC_Lynx_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Lynx_cartridge_rampart] mode:keep,
+		}
+	}
+
+	craftRecipe Play Todd's Adventures
+	{
+		timedAction = Video_Game_Consoles.PlayTodds,
+		Time = 200,
+		OnCreate = VGC_PlayGame,
+		Tags = InHandCraft;CanBeDoneInDark;Electrical,
+		category = Leisure,
+		inputs
+		{
+			item 1 tags[VGC_Lynx_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Lynx_cartridge_todds] mode:keep,
+		}
+	}
+
 /***Battery***/
 
     craftRecipe Remove Battery GB
@@ -610,6 +682,24 @@ module Video_Game_Consoles
         inputs
         {
             item 1 [Video_Game_Consoles.Game_Gear] mode:keep,
+        }
+		outputs
+        {
+			item 1  Base.Battery,
+        }
+
+    }
+
+	craftRecipe Remove Battery Lynx
+    {
+        timedAction = Video_Game_Consoles.Lynx_Battery,
+		Time = 40,
+		OnCreate = VGC_BatteryOut,
+        Tags = InHandCraft;CanBeDoneInDark;Leisure,
+        category = Leisure,
+        inputs
+        {
+            item 1 [Video_Game_Consoles.Atari_Lynx] mode:keep,
         }
 		outputs
         {
@@ -654,6 +744,23 @@ module Video_Game_Consoles
 
     }
 
+	craftRecipe Insert Battery Lynx
+    {
+        timedAction = Video_Game_Consoles.Lynx_Battery,
+		Time = 40,
+		OnCreate = Recipe.OnCreate.TorchBatteryInsert,
+        Tags = InHandCraft;CanBeDoneInDark;Electrical,
+        category = Electrical,
+        inputs
+        {
+			item 1 tags[VGC_Lynx_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
+        }
+		outputs
+        {
+        }
+
+    }
 
 /***Other***/
 
