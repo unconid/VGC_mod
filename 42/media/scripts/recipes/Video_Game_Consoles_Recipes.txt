@@ -3,145 +3,145 @@ module Video_Game_Consoles
 
 /***Play_GameBoy***/
 
-    craftRecipe Play Zelda
+    craftRecipe PlayZelda
     {
-        timedAction = Video_Game_Consoles.PlayZelda,
+        timedAction = Video_Game_Consoles.PlayZeldaG,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-        Tags = InHandCraft;CanBeDoneInDark;Leisure,
-        category = Leisure,
+        Tags = InHandCraft;CanBeDoneInDark;Gaming,
+        category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
         inputs
         {
-            item 1 tags[VGC_GB_Console] mode:keep,
+            item 1 [Video_Game_Consoles.GameBoy] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GB_Cartridge_Zelda] mode:keep,
         }
 
     }
 
-	craftRecipe Play Kirby
+	craftRecipe PlayKirby
 	{
 		timedAction = Video_Game_Consoles.PlayKirby,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GB_Console] mode:keep,
+            item 1 [Video_Game_Consoles.GameBoy] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GB_Cartridge_Kirby] mode:keep,
 		}
 	}
 
-	craftRecipe Play Final Fantasy
+	craftRecipe PlayFinalFantasy
 	{
 		timedAction = Video_Game_Consoles.PlayFinalFantasy,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GB_Console] mode:keep,
+            item 1 [Video_Game_Consoles.GameBoy] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GB_Cartridge_Fantasy] mode:keep,
 		}
 	}
 
-	craftRecipe Play Mario
+	craftRecipe PlayMario
 	{
 		timedAction = Video_Game_Consoles.PlayMario,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GB_Console] mode:keep,
+            item 1 [Video_Game_Consoles.GameBoy] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GB_Cartridge_Mario] mode:keep,
 		}
 	}
 
-	craftRecipe Play Tetris
+	craftRecipe PlayTetris
 	{
 		timedAction = Video_Game_Consoles.PlayTetris,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GB_Console] mode:keep,
+            item 1 [Video_Game_Consoles.GameBoy] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GB_Cartridge_Tetris] mode:keep,
 		}
 	}
 	
 /***Play_Game_Gear***/
 
-	craftRecipe Play Streets Of Rage 2
+	craftRecipe PlayStreetsOfRage2
 	{
 		timedAction = Video_Game_Consoles.PlayStreetsOfRage2,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GG_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GG_Cartridge_sor2] mode:keep,
 		}
 	}
 
-	craftRecipe Play Ax Battler
+	craftRecipe PlayAxBattler
 	{
 		timedAction = Video_Game_Consoles.PlayAxBattler,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GG_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GG_Cartridge_AxBattler] mode:keep,
 		}
 	}
 
-	craftRecipe Play Shinobi 2
+	craftRecipe PlayShinobi2
 	{
 		timedAction = Video_Game_Consoles.PlayShinobi2,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GG_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GG_Cartridge_Shinobi] mode:keep,
 		}
 	}
 
-	craftRecipe Play Sonic Chaos
+	craftRecipe PlaySonicChaos
 	{
 		timedAction = Video_Game_Consoles.PlaySonicChaos,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GG_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GG_Cartridge_Sonic] mode:keep,
 		}
 	}
 
-	craftRecipe Play Vampire MoD
+	craftRecipe PlayVampireMoD
 	{
 		timedAction = Video_Game_Consoles.PlayVampireMoD,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
-		Tags = InHandCraft;CanBeDoneInDark;Leisure,
-		category = Leisure,
+		Tags = InHandCraft;CanBeDoneInDark;Gaming,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_GG_Console] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.GG_Cartridge_Vampire] mode:keep,
 		}
 	}
@@ -149,14 +149,14 @@ module Video_Game_Consoles
 /***Play_SNES***/
 
 
-    craftRecipe Play Super Mario World
+    craftRecipe PlaySuperMarioWorld
     {
         timedAction = Video_Game_Consoles.PlaySuperMarioWorld,
         Time = 200,
-        OnTest = VGC_OnTest_SNES,
-        OnCreate = VGC_PlayGame,
         Tags = InHandCraft;CanBeDoneInDark;Electrical,
-        category = Electrical,
+        category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SNES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
         inputs
         {
             item 1 [Video_Game_Consoles.SNES_Cartridge_Mario] mode:keep,
@@ -164,128 +164,130 @@ module Video_Game_Consoles
 
     }
 	
-	craftRecipe Play Secret Of Mana
+	craftRecipe PlaySecretOfMana
 	{
 		timedAction = Video_Game_Consoles.PlaySecretOfMana,
 		Time = 200,
-		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Electrical,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SNES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.SNES_Cartridge_Mana] mode:keep,
 		}
 	}
 
-	craftRecipe Play StarFox
+	craftRecipe PlayStarFox
 	{
 		timedAction = Video_Game_Consoles.PlayStarFox,
 		Time = 200,
-		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SNES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.SNES_Cartridge_Fox] mode:keep,
 		}
 	}
 
-	craftRecipe Play MortalKombat 2
+	craftRecipe PlayMortalKombat2
 	{
 		timedAction = Video_Game_Consoles.PlayMortalKombat2,
 		Time = 200,
-		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SNES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.SNES_Cartridge_MK2] mode:keep,
 		}
 	}
 
-	craftRecipe Play NBA JAM
+	craftRecipe PlayNBAJAM
 	{
 		timedAction = Video_Game_Consoles.PlayNBAJAM,
 		Time = 200,
-		OnTest = VGC_OnTest_SNES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SNES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
+			
 			item 1 [Video_Game_Consoles.SNES_Cartridge_NBA] mode:keep,
 		}
 	}
 
 /***Play_Genesis***/
 
-	craftRecipe Play Aladdin
+	craftRecipe PlayAladdin
 	{
 		timedAction = Video_Game_Consoles.PlayAladdin,
 		Time = 200,
-		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Genesis,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
+			
 			item 1 [Video_Game_Consoles.Genesis_Cartridge_Aladdin] mode:keep,
 		}
 	}
 
-	craftRecipe Play GoldenAxe
+	craftRecipe PlayGoldenAxe
 	{
 		timedAction = Video_Game_Consoles.PlayGoldenAxe,
 		Time = 200,
-		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Genesis,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Genesis_Cartridge_gaxe] mode:keep,
 		}
 	}
 
-	craftRecipe Play Ghouls And Ghosts
+	craftRecipe PlayGhoulsAndGhosts
 	{
 		timedAction = Video_Game_Consoles.PlayGhoulsAndGhosts,
 		Time = 200,
-		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Genesis,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Genesis_Cartridge_ghouls] mode:keep,
 		}
 	}
 
-	craftRecipe Play Sonic
+	craftRecipe PlaySonic
 	{
 		timedAction = Video_Game_Consoles.PlaySonic,
 		Time = 200,
-		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Genesis,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Genesis_Cartridge_sonic] mode:keep,
 		}
 	}
 
-	craftRecipe Play StreetFighter 2
+	craftRecipe PlayStreetFighter2
 	{
 		timedAction = Video_Game_Consoles.PlayStreetFighter2,
 		Time = 200,
-		OnTest = VGC_OnTest_Genesis,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Genesis,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Genesis_Cartridge_street] mode:keep,
@@ -294,70 +296,70 @@ module Video_Game_Consoles
 
 /***Play_NES***/
 
-	craftRecipe Play Contra
+	craftRecipe PlayContra
 	{
 		timedAction = Video_Game_Consoles.PlayContra,
 		Time = 200,
-		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_NES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.NES_Cartridge_Contra] mode:keep,
 		}
 	}
 
-	craftRecipe Play SuperMario 3
+	craftRecipe PlaySuperMario3
 	{
 		timedAction = Video_Game_Consoles.PlaySuperMario3,
 		Time = 200,
-		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_NES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.NES_Cartridge_Mario3] mode:keep,
 		}
 	}
 
-	craftRecipe Play MegaMan
+	craftRecipe PlayMegaMan
 	{
 		timedAction = Video_Game_Consoles.PlayMegaMan,
 		Time = 200,
-		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_NES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.NES_Cartridge_Megaman] mode:keep,
 		}
 	}
 
-	craftRecipe Play Metroid
+	craftRecipe PlayMetroid
 	{
 		timedAction = Video_Game_Consoles.PlayMetroid,
 		Time = 200,
-		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_NES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.NES_Cartridge_Metroid] mode:keep,
 		}
 	}
 
-	craftRecipe Play The Legend Of Zelda
+	craftRecipe PlayTheLegendOfZelda
 	{
 		timedAction = Video_Game_Consoles.PlayTheLegendOfZelda,
 		Time = 200,
-		OnTest = VGC_OnTest_NES,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_NES,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.NES_Cartridge_Zelda] mode:keep,
@@ -366,70 +368,70 @@ module Video_Game_Consoles
 
 /***Atari_Games***/
 
-	craftRecipe Play Combat
+	craftRecipe PlayCombat
 	{
 		timedAction = Video_Game_Consoles.PlayCombat,
 		Time = 200,
-		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Atari,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_Combat] mode:keep,
 		}
 	}
 
-	craftRecipe Play Pitfall
+	craftRecipe PlayPitfall
 	{
 		timedAction = Video_Game_Consoles.PlayPitfall,
 		Time = 200,
-		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Atari,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_Pitfall] mode:keep,
 		}
 	}
 
-	craftRecipe Play MSPacMan
+	craftRecipe PlayMSPacman
 	{
 		timedAction = Video_Game_Consoles.PlayMSPacMan,
 		Time = 200,
-		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Atari,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_MSPacman] mode:keep,
 		}
 	}
 
-	craftRecipe Play SpaceInvaders
+	craftRecipe PlaySpaceInvaders
 	{
 		timedAction = Video_Game_Consoles.PlaySpaceInvaders,
 		Time = 200,
-		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Atari,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_Spaceinvaders] mode:keep,
 		}
 	}
 
-	craftRecipe Play Asteroids
+	craftRecipe PlayAsteroids
 	{
 		timedAction = Video_Game_Consoles.PlayAsteroids,
 		Time = 200,
-		OnTest = VGC_OnTest_Atari,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_Atari,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Atari_Cartridge_Asteroids] mode:keep,
@@ -438,70 +440,70 @@ module Video_Game_Consoles
 
 /***Sega_CD***/
 
-	craftRecipe Play Sonic CD
+	craftRecipe PlaySonicCD
 	{
 		timedAction = Video_Game_Consoles.PlaySonic,
 		Time = 200,
-		OnTest = VGC_OnTest_SegaCD,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SegaCD,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Sega_CD_Sonic] mode:keep,
 		}
 	}
 
-	craftRecipe Play Eye Of The Beholder
+	craftRecipe PlayEyeOfTheBeholder
 	{
 		timedAction = Video_Game_Consoles.PlayBeholder,
 		Time = 200,
-		OnTest = VGC_OnTest_SegaCD,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SegaCD,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Sega_CD_beholder] mode:keep,
 		}
 	}
 
-	craftRecipe Play Dune
+	craftRecipe PlayDune
 	{
 		timedAction = Video_Game_Consoles.PlayDune,
 		Time = 200,
-		OnTest = VGC_OnTest_SegaCD,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SegaCD,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Sega_CD_dune] mode:keep,
 		}
 	}
 
-	craftRecipe Play Jurassic Park
+	craftRecipe PlayJurassicPark
 	{
 		timedAction = Video_Game_Consoles.Playjurassic,
 		Time = 200,
-		OnTest = VGC_OnTest_SegaCD,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SegaCD,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Sega_CD_jurasic] mode:keep,
 		}
 	}
 
-	craftRecipe Play Night Trap
+	craftRecipe PlayNightTrap
 	{
 		timedAction = Video_Game_Consoles.PlayNightTrap,
 		Time = 200,
-		OnTest = VGC_OnTest_SegaCD,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_SegaCD,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.Sega_CD_nighttrap] mode:keep,
@@ -510,70 +512,70 @@ module Video_Game_Consoles
 
 /***Philips_CD_i***/
 
-	craftRecipe Play Link: The Faces of Evil
+	craftRecipe PlayLink:TheFacesofEvil
 	{
 		timedAction = Video_Game_Consoles.PlayLink,
 		Time = 200,
-		OnTest = VGC_OnTest_CD_I,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_CD_I,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.CDi_Link] mode:keep,
 		}
 	}
 
-	craftRecipe Play The 7th Guest
+	craftRecipe PlayThe7thGuest
 	{
 		timedAction = Video_Game_Consoles.Play7Guest,
 		Time = 200,
-		OnTest = VGC_OnTest_CD_I,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_CD_I,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.CDi_7guest] mode:keep,
 		}
 	}
 
-	craftRecipe Play Lemmings
+	craftRecipe PlayLemmings
 	{
 		timedAction = Video_Game_Consoles.PlayLemmings,
 		Time = 200,
-		OnTest = VGC_OnTest_CD_I,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_CD_I,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.CDi_lemmings] mode:keep,
 		}
 	}
 
-	craftRecipe Play Pac-Attack
+	craftRecipe PlayPac-Attack
 	{
 		timedAction = Video_Game_Consoles.PlayPacAttack,
 		Time = 200,
-		OnTest = VGC_OnTest_CD_I,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_CD_I,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.CDi_pacattack] mode:keep,
 		}
 	}
 
-	craftRecipe Play Zelda: The Wand of Gamelon
+	craftRecipe PlayZelda:TheWandofGamelon
 	{
 		timedAction = Video_Game_Consoles.PlayZelda,
 		Time = 200,
-		OnTest = VGC_OnTest_CD_I,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnTest = Video_Game_Consoles.VGC_OnTest_CD_I,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.CDi_zelda] mode:keep,
@@ -582,89 +584,88 @@ module Video_Game_Consoles
 
 /***Atari_Lynx***/
 
-	craftRecipe Play Checkered Flag
+	craftRecipe PlayCheckeredFlag
 	{
 		timedAction = Video_Game_Consoles.PlayCheckere,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-            item 1 tags[VGC_Lynx_Console] mode:keep,
+            item 1 [Video_Game_Consoles.Atari_Lynx] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.Lynx_cartridge_checkered] mode:keep,
 		}
 	}
 
-	craftRecipe Play Chip's Challenge
+	craftRecipe PlayChipsChallenge
 	{
 		timedAction = Video_Game_Consoles.PlayChips,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-		    item 1 tags[VGC_Lynx_Console] mode:keep,
+            item 1 [Video_Game_Consoles.Atari_Lynx] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.Lynx_cartridge_chips] mode:keep,
 		}
 	}
 
-	craftRecipe Play KLAX
+	craftRecipe PlayKLAX
 	{
 		timedAction = Video_Game_Consoles.PlayKlax,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_Lynx_Console] mode:keep,
+            item 1 [Video_Game_Consoles.Atari_Lynx] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.Lynx_cartridge_klax] mode:keep,
 		}
 	}
 
-	craftRecipe Play Rampart
+	craftRecipe PlayRampart
 	{
 		timedAction = Video_Game_Consoles.PlayRampart,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_Lynx_Console] mode:keep,
+            item 1 [Video_Game_Consoles.Atari_Lynx] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.Lynx_cartridge_rampart] mode:keep,
 		}
 	}
 
-	craftRecipe Play Todd's Adventures
+	craftRecipe PlayToddsAdventures
 	{
 		timedAction = Video_Game_Consoles.PlayTodds,
 		Time = 200,
-		OnCreate = VGC_PlayGame,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
+		OnCreate = Video_Game_Consoles.VGC_PlayGame,
 		inputs
 		{
-			item 1 tags[VGC_Lynx_Console] mode:keep,
+            item 1 [Video_Game_Consoles.Atari_Lynx] flags[NotEmpty],
 			item 1 [Video_Game_Consoles.Lynx_cartridge_todds] mode:keep,
 		}
 	}
 
 /***Battery***/
 
-    craftRecipe Remove Battery GB
+    craftRecipe RemoveBatteryGB
     {
         timedAction = Video_Game_Consoles.GB_Battery,
 		Time = 40,
-		OnCreate = VGC_BatteryOut,
-        Tags = InHandCraft;CanBeDoneInDark;Leisure,
-        category = Leisure,
+        Tags = InHandCraft;CanBeDoneInDark;Electrical,
+        category = Electrical,
         inputs
         {
-            item 1 [Video_Game_Consoles.GameBoy] mode:keep,
-        }
+			item 1 [Video_Game_Consoles.GameBoy] mode:keep flags[NotEmpty;InheritUsesAndEmpty],        
+		}
 		outputs
         {
 			item 1  Base.Battery,
@@ -672,52 +673,50 @@ module Video_Game_Consoles
 
     }
 	
-	craftRecipe Remove Battery GG
+	craftRecipe RemoveBatteryGG
     {
         timedAction = Video_Game_Consoles.GG_Battery,
 		Time = 40,
-		OnCreate = VGC_BatteryOut,
-        Tags = InHandCraft;CanBeDoneInDark;Leisure,
-        category = Leisure,
-        inputs
-        {
-            item 1 [Video_Game_Consoles.Game_Gear] mode:keep,
-        }
-		outputs
-        {
-			item 1  Base.Battery,
-        }
-
-    }
-
-	craftRecipe Remove Battery Lynx
-    {
-        timedAction = Video_Game_Consoles.Lynx_Battery,
-		Time = 40,
-		OnCreate = VGC_BatteryOut,
-        Tags = InHandCraft;CanBeDoneInDark;Leisure,
-        category = Leisure,
-        inputs
-        {
-            item 1 [Video_Game_Consoles.Atari_Lynx] mode:keep,
-        }
-		outputs
-        {
-			item 1  Base.Battery,
-        }
-
-    }
-
-    craftRecipe Insert Battery GB
-    {
-        timedAction = Video_Game_Consoles.GB_Battery,
-		Time = 40,
-		OnCreate = Recipe.OnCreate.TorchBatteryInsert,
         Tags = InHandCraft;CanBeDoneInDark;Electrical,
         category = Electrical,
         inputs
         {
-			item 1 tags[VGC_GB_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+            item 1 [Video_Game_Consoles.Game_Gear] mode:keep flags[NotEmpty;InheritUsesAndEmpty],
+        }
+		outputs
+        {
+			item 1  Base.Battery,
+        }
+
+    }
+
+	craftRecipe RemoveBatteryLynx
+    {
+        timedAction = Video_Game_Consoles.Lynx_Battery,
+		Time = 40,
+        Tags = InHandCraft;CanBeDoneInDark;Electrical,
+        category = Electrical,
+        inputs
+        {
+            item 1 [Video_Game_Consoles.Atari_Lynx] mode:keep flags[NotEmpty;InheritUsesAndEmpty],
+        }
+		outputs
+        {
+			item 1  Base.Battery,
+        }
+
+    }
+
+    craftRecipe InsertBatteryGB
+    {
+        timedAction = Video_Game_Consoles.GB_Battery,
+		Time = 40,
+        Tags = InHandCraft;CanBeDoneInDark;Electrical,
+        category = Electrical,
+		OnCreate = RecipeCodeOnCreate.torchBatteryInsert,
+        inputs
+        {
+			item 1 [Video_Game_Consoles.GameBoy] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
 			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
         }
 		outputs
@@ -726,16 +725,16 @@ module Video_Game_Consoles
 
     }
 	
-	craftRecipe Insert Battery GG
+	craftRecipe InsertBatteryGG
     {
         timedAction = Video_Game_Consoles.GG_Battery,
 		Time = 40,
-		OnCreate = Recipe.OnCreate.TorchBatteryInsert,
         Tags = InHandCraft;CanBeDoneInDark;Electrical,
         category = Electrical,
+		OnCreate = RecipeCodeOnCreate.torchBatteryInsert,
         inputs
         {
-			item 1 tags[VGC_GG_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+			item 1 [Video_Game_Consoles.Game_Gear] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
 			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
         }
 		outputs
@@ -744,16 +743,16 @@ module Video_Game_Consoles
 
     }
 
-	craftRecipe Insert Battery Lynx
+	craftRecipe InsertBatteryLynx
     {
         timedAction = Video_Game_Consoles.Lynx_Battery,
 		Time = 40,
-		OnCreate = Recipe.OnCreate.TorchBatteryInsert,
         Tags = InHandCraft;CanBeDoneInDark;Electrical,
         category = Electrical,
+		OnCreate = RecipeCodeOnCreate.torchBatteryInsert,
         inputs
         {
-			item 1 tags[VGC_Lynx_Console;UsesBattery] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
+			item 1 [Video_Game_Consoles.Atari_Lynx] flags[IsEmpty;AllowFavorite;ItemCount] mode:keep,
 			item 1 [Base.Battery] flags[ItemCount] mode:destroy,
         }
 		outputs
@@ -764,7 +763,7 @@ module Video_Game_Consoles
 
 /***Other***/
 
-	craftRecipe Dismantle Console
+	craftRecipe DismantleConsole
 	{
 		timedAction = Video_Game_Consoles.Dismantle_Console,
 		Time = 60,
@@ -773,7 +772,7 @@ module Video_Game_Consoles
 		xpAward = Electricity:2,
 		inputs
 		{
-			item 1 tags[VGC_Console] flags[IsEmpty] mode:destroy,
+			item 1 tags[VGC_Console] mode:destroy,
 			item 1 [Base.Screwdriver] mode:keep,
 		}
 		outputs
@@ -783,12 +782,12 @@ module Video_Game_Consoles
 
 	}
 
-	craftRecipe Connect Sega CD
+	craftRecipe ConnectSegaCD
 	{
 		timedAction = Video_Game_Consoles.Dismantle_Console,
 		Time = 60,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.SegaCD_empty] mode:destroy,
@@ -800,12 +799,12 @@ module Video_Game_Consoles
 		}
 	}
 
-	craftRecipe Disconnect Sega CD
+	craftRecipe DisconnectSegaCD
 	{
 		timedAction = Video_Game_Consoles.Dismantle_Console,
 		Time = 60,
 		Tags = InHandCraft;CanBeDoneInDark;Electrical,
-		category = Leisure,
+		category = Gaming,
 		inputs
 		{
 			item 1 [Video_Game_Consoles.SegaCD] mode:destroy,

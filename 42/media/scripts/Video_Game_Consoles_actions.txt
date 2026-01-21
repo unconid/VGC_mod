@@ -3,7 +3,7 @@ module Video_Game_Consoles
 
 /***Play_GameBoy***/
 
-    timedAction PlayZelda
+    timedAction PlayZeldaG
     {
         metabolics      = SedentaryActivity,
         actionAnim      = MakingElectrical,
