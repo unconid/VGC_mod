@@ -47,10 +47,7 @@ local function modifyStat(stats, statType, delta, minVal, maxVal)
 end
 
 function Video_Game_Consoles.VGC_PlayGame(recipeData, character)
-    if not character or not character:isAlive() then return end
-    
     local stats = character:getStats()
-    if not stats then return end
 
     -- ROLL THE DICE: RAGE_QUIT_CHANCE
     if ZombRand(1, 101) <= RAGE_QUIT_CHANCE then
@@ -65,6 +62,8 @@ function Video_Game_Consoles.VGC_PlayGame(recipeData, character)
         modifyStat(stats, CharacterStat.BOREDOM, -ZombRand(20, 41), 0.0, 100.0)
         modifyStat(stats, CharacterStat.STRESS, -ZombRand(10, 21) / 100.0, 0.0, 1.0)
     end
+    
+    return true
 end
 
 --------------------------------------------------
@@ -144,7 +143,9 @@ local function VGChasRequiredConditions(player, targetItemType, spriteMap)
 end
 
 local function VGC_OnTest_CanPerform(recipe, player, item, targetItemType)
-    return VGChasRequiredConditions(player or getPlayer(), targetItemType, tvSpriteMap)
+    local actualPlayer = player or getPlayer()
+    if not actualPlayer then return false end
+    return VGChasRequiredConditions(actualPlayer, targetItemType, tvSpriteMap)
 end
 
 --------------------------------------------------

@@ -1,4 +1,4 @@
-module Video_Game_Consoles
+module Base
 {
 
 /***Play_GameBoy***/
@@ -763,7 +763,7 @@ module Video_Game_Consoles
 
 /***Other***/
 
-	craftRecipe DismantleConsole
+	craftRecipe DismantleConsole_vgc
 	{
 		timedAction = Video_Game_Consoles.Dismantle_Console,
 		Time = 60,
